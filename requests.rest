@@ -1,0 +1,25 @@
+POST http://localhost:3000/api/institution/add
+Content-Type: application/json
+
+{
+    "name": "ahmad"
+}
+
+###
+
+POST http://localhost:3000/api/institution/add
+Content-Type: application/json
+
+{
+    "title": "Institute of Education"
+}
+
+###
+
+POST http://localhost:3000/api/department/add
+Content-Type: application/json
+
+{
+    "title": "Computer Science",
+    "faculty": "Iya Abubakar Institute of ICT"
+}
