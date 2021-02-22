@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const facultyAdminSchema = new mongoose.Schema({
+const projectSupervisorSchema = new mongoose.Schema({
     Firstname: {
         type: String,
         required: true
@@ -25,11 +25,18 @@ const facultyAdminSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    department: {
+        type: String,
+        required: true
+    },
+    project_groups: {
+        type: Array
+    },
     password: {
         type: String,
         required: true
     }
 })
 
-const FacultyAdmin = mongoose.model('FacultyAdmin', facultyAdminSchema);
-module.exports = FacultyAdmin;
+const ProjectSupervisor = mongoose.model('ProjectSupervisor', projectSupervisorSchema);
+module.exports = ProjectSupervisor;

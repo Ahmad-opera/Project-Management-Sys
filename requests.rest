@@ -7,11 +7,40 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/api/institution/add
+POST http://localhost:3000/api/faculty/add
 Content-Type: application/json
 
 {
-    "title": "Institute of Education"
+    "title": "Iya Abubakar Institute of ICT"
+}
+
+###
+
+POST http://localhost:3000/api/faculty/admin/add
+Content-Type: application/json
+
+{
+    "userID": "ahmadopera",
+    "p_number": "pts001",
+    "email": "ahmadee.by@gmail.com",
+    "faculty": "Iya Abubakar Institute of ICT",
+    "password": "ahmadopera"
+}
+
+###
+
+POST http://localhost:3000/api/faculty/supervisor/add
+Content-Type: application/json
+
+{
+    "Firstname": "Abubakar",
+    "Lastname": "Isah",
+    "userID": "cadet",
+    "p_number": "pts002",
+    "faculty": "Iya Abubakar Institute of ICT",
+    "department": "Computer Science",
+    "email": "isahabba@gmail.com",
+    "password": "cadetcoder"
 }
 
 ###
@@ -20,6 +49,36 @@ POST http://localhost:3000/api/department/add
 Content-Type: application/json
 
 {
-    "title": "Computer Science",
+    "title": "Computer Engineering",
     "faculty": "Iya Abubakar Institute of ICT"
+}
+
+###
+
+POST http://localhost:3000/api/team/create
+Content-Type: application/json
+
+{
+    "title": "Team 1",
+    "year": 2021,
+    "faculty": "Iya Abubakar Institute of ICT",
+    "department": "Computer Science"
+}
+###
+
+POST http://localhost:3000/api/team/member/create
+Content-Type: application/json
+
+{
+    "firstname": "Ahmad",
+    "lastname": "Yusuf",
+    "reg_no": "D18CSC10006",
+    "faculty": "Iya Abubakar Institute of ICT",
+    "department": "Computer Science",
+    "password": "ahmadopera",
+    "CGPA": 3.42,
+    "year": 2021,
+    "state_of_origin": "Kaduna",
+    "email": "Ahmadee.by@gmail.com",
+    "team_leader": true
 }
